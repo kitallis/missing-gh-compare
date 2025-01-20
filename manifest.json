@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "GitHub SHA Compare",
+  "version": "1.0",
+  "description": "Adds a button to compare branches with specific SHA",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["*://github.com/*/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "sha-comparator@example.com"
+    }
+  }
+}
