@@ -4,7 +4,7 @@ GitHub has no easy way to access the very useful [diff / compare](https://docs.g
 
 ## Install
 
-To install this extension, clone this repo and go to [about:debugging](about:debugging#/runtime/this-firefox) and load this extension.
+To install this extension, clone this repo and go to **about:debugging** — `about:debugging#/runtime/this-firefox` and load this extension.
 
 ## What
 
