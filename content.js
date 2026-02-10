@@ -21,10 +21,14 @@ function addCompareButton() {
     const owner = pathParts[1];
     const repo = pathParts[2];
 
-    const sha = prompt("Enter the SHA to compare with main:");
-    if (!sha) return;
+    const input = prompt("Enter SHA and optionally a branch (default: main).\nExample: abc123 or abc123 master");
+    if (!input) return;
 
-    const compareUrl = `https://github.com/${owner}/${repo}/compare/${sha}...main`;
+    const parts = input.trim().split(/\s+/);
+    const sha = parts[0];
+    const branch = parts[1] || "main";
+
+    const compareUrl = `https://github.com/${owner}/${repo}/compare/${sha}...${branch}`;
     window.open(compareUrl, "_blank");
   });
 

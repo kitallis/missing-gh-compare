@@ -13,7 +13,10 @@
   ],
   "browser_specific_settings": {
     "gecko": {
-      "id": "sha-comparator@example.com"
+      "id": "missing-gh-compare@kitallis.in",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
     }
   }
 }
