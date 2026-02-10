@@ -3,6 +3,9 @@
   "name": "GitHub SHA Compare",
   "version": "1.0",
   "description": "Adds a button to compare branches with specific SHA",
+  "icons": {
+    "128": "icon.svg"
+  },
   "permissions": ["activeTab"],
   "content_scripts": [
     {

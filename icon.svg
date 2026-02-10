@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" fill="none">
+  <!-- Background -->
+  <rect width="128" height="128" rx="24" fill="#24292e"/>
+
+  <!-- Left branch line -->
+  <path d="M40 30 L40 68 Q40 78 50 78 L64 78" stroke="#58a6ff" stroke-width="8" stroke-linecap="round" fill="none"/>
+
+  <!-- Right branch line -->
+  <path d="M88 30 L88 68 Q88 78 78 78 L64 78" stroke="#3fb950" stroke-width="8" stroke-linecap="round" fill="none"/>
+
+  <!-- Dots at branch tops -->
+  <circle cx="40" cy="30" r="8" fill="#58a6ff"/>
+  <circle cx="88" cy="30" r="8" fill="#3fb950"/>
+
+  <!-- Merge point -->
+  <circle cx="64" cy="78" r="8" fill="#f0f6fc"/>
+
+  <!-- Down arrow from merge -->
+  <path d="M64 86 L64 98" stroke="#f0f6fc" stroke-width="8" stroke-linecap="round"/>
+</svg>

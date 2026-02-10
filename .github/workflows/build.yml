@@ -18,4 +18,5 @@ jobs:
             manifest.json
             content.js
             styles.css
+            icon.svg
             LICENSE
