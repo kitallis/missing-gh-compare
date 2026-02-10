@@ -11,6 +11,14 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Bump version
+        run: |
+          current=$(jq -r .version manifest.json)
+          major=$(echo "$current" | cut -d. -f1)
+          minor=$(echo "$current" | cut -d. -f2)
+          new="$major.$((minor + 1))"
+          jq --arg v "$new" '.version = $v' manifest.json > tmp.json && mv tmp.json manifest.json
+
       - uses: actions/upload-artifact@v4
         with:
           name: gh-compare
