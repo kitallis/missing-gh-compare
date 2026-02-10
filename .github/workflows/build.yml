@@ -11,10 +11,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Create extension zip
-        run: zip -r gh-compare.zip manifest.json content.js styles.css LICENSE
-
       - uses: actions/upload-artifact@v4
         with:
           name: gh-compare
-          path: gh-compare.zip
+          path: |
+            manifest.json
+            content.js
+            styles.css
+            LICENSE
